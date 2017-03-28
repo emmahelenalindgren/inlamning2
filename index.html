@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inlämning 1</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-auth.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-messaging.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js">
+	</script>
+	<script>
+	 // Initialize Firebase
+	 var config = {
+	   apiKey: "AIzaSyCwedH-_P6un79PD7CXmSUwXQhdtvuSKF0",
+	   authDomain: "testet1-37eab.firebaseapp.com",
+	   databaseURL: "https://testet1-37eab.firebaseio.com",
+	   storageBucket: "testet1-37eab.appspot.com",
+	   messagingSenderId: "880563577431"
+	 };
+	 firebase.initializeApp(config);   
+	</script>
+	<script src="script.js">
+	</script>
+</head>
+<body>
+	<h1>Välkommen till Tjatter!</h1><img alt="logo" class="logochat" src="chat.png">
+	<form>
+		<input class="inputtext" id="inputname" name="inputname" placeholder="ditt namn" type="text"><br>
+		<br>
+	</form>
+	<div id="loggedintext"></div><br>
+	<button class="btn btn-dark" id="loginButton">logga in</button> <button class="btn btn-dark" id="logoutButton">logga ut</button><br>
+	<br>
+	<div class="chatpart1" id="chatpart">
+		<h2>Nu kan du börja chatta!</h2>
+		<form>
+			<input id="messageSquare" name="id" placeholder="Skriv här!" type="text"><br>
+		</form><br>
+		<button class="btn btn-dark" id="sendbutton">skicka</button>
+		<ul id="chattBox"></ul>
+	</div>
+</body>
+</html>
